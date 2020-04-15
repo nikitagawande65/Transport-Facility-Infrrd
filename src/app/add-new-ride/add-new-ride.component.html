@@ -1,0 +1,90 @@
+<form [formGroup]='addRideForm '>
+    <div class="addRideForm">
+      <div class="row">
+        <div  >
+          <label for="id">Employee Id</label>
+        </div>
+        <div>
+          <input type="text" id="empid" formControlName='empid' name="empid" placeholder="Employee Id..">
+          <div *ngIf="submitted && f.empid.errors" class="invalid-feedback">
+            <div class="errorMsg" *ngIf="f.empid.errors.required">ID is required</div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div  >
+          <label for="type">Vehicle Type</label>
+        </div>
+        <div>
+          <input type="text" id="type" formControlName='type' name="type" placeholder="Vehicle Type..">
+          <div *ngIf="submitted && f.type.errors" class="invalid-feedback">
+            <div class="errorMsg" *ngIf="f.type.errors.required">Vehicle Type is required</div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div  >
+          <label for="number">Vehicle No</label>
+        </div>
+        <div>
+          <input type="text" id="number" formControlName="number" name="number" placeholder="Vehicle number..">
+          <div *ngIf="submitted && f.number.errors" class="invalid-feedback">
+            <div class="errorMsg" *ngIf="f.number.errors.required">Vehicle number is required</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div>
+          <label for="seat">Vacant Seat</label>
+        </div>
+        <div>
+          <input type="text" id="seat" formControlName="seat" name="seat" placeholder="Vacant Seat..">
+          <div *ngIf="submitted && f.seat.errors" class="invalid-feedback">
+            <div class="errorMsg" *ngIf="f.seat.errors.required">Vacant Seat is required</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div  >
+          <label for="time">Time</label>
+        </div>
+        <div>
+          <input type="text" id="time" formControlName="time" name="time" placeholder="Time..">
+          <div *ngIf="submitted && f.time.errors" class="invalid-feedback">
+            <div class="errorMsg" *ngIf="f.time.errors.required">Time is required</div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div  >
+          <label for="pickup">Pick-up Point</label>
+        </div>
+        <div>
+          <input type="text" id="pickup" formControlName="pickup" name="pickup" placeholder="Pick-up Point..">
+          <div *ngIf="submitted && f.pickup.errors" class="invalid-feedback">
+            <div class="errorMsg" *ngIf="f.pickup.errors.required">Pick-up point is required</div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div  >
+          <label for="destination">Destination</label>
+        </div>
+        <div>
+          <input type="text" id="destination" formControlName="destination" name="destination" placeholder="Destinationt..">
+          <div *ngIf="submitted && f.destination.errors" class="invalid-feedback">
+            <div class="errorMsg" *ngIf="f.destination.errors.required">Destination is required</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <input type="submit" (click)="onSave()" value="Submit">
+      </div>
+    </div>
+    <!-- <div id="snackbar">
+      Ride Details has been submitted successfully...</div> -->
+  </form>
+  <li style="list-style: none;"><a routerLink="/">Home</a></li>

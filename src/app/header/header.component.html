@@ -1,0 +1,11 @@
+<div class="header">
+    <img (click)="toggleMenu()" id = "menu" class="openbtn" src="./assets/images/options.png">
+    <span class="heading">Transport Facility</span>
+</div>
+  <div id="mySidebar" class="sidebar" *ngIf="isOpen">
+    <span class="closebtn" (click)="toggleMenu()">X</span>
+    <ul id="mySidebar" class="menuItems">
+        <li><a routerLink="/" (click)="toggleMenu()">Home</a></li>
+        <li><a routerLink="/addNewRide" (click)="toggleMenu()">Add New Ride</a></li>
+    </ul>
+</div>

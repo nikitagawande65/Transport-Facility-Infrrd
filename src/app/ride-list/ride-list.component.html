@@ -1,0 +1,25 @@
+
+
+
+<div class="search">
+        <input #searchBox class="searchBar" placeholder="Search.." type="text" name="search" (input)="search(searchBox.value)">
+        <span> <button (click)="search(searchBox.value)" class="searchBtn" type="button">Search</button></span>
+      </div>
+    
+<div class = "home">
+    <div class="rideList" *ngFor="let data of rideList">
+      <div class="rideDescription">
+        
+        <div>Employee ID:  <span>{{data.employeeId}}</span></div>
+        <div>Vehicle Type:  <span>{{data.vehicleType}}</span></div>
+        <div>Vehicle Number:  <span>{{data.vehicleNumber}}</span></div>
+        <div class= "contentLeft">Vacant Seat:  <span>{{data.vacantSeat}}</span></div>
+        <div>Pickup Point:  <span>{{data.pickupPoint}}</span></div>
+        <div class= "contentLeft">Time:  <span>{{data.time}}</span></div>
+        <div>Destination:  <span>{{data.destination}}</span></div>
+        <div class= "contentLeft"> <button (click)="onClick(data)" class="bookBtn" type="button">Book</button></div>
+
+      </div>
+    </div>
+  </div>
+

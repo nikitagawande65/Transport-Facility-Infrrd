@@ -1,0 +1,67 @@
+
+.home{
+    /* display: flex; */
+    width: 20% !important;
+    padding-left: 15px;
+    margin-left: 16%;
+    margin-top: 3%;
+ }
+ .rideList{
+    width: 308%;
+    background-color: rgba(95, 158, 160, 0.815);
+    /* padding-left: 10%; */
+    padding: 11%;
+}
+.rideDescription{
+    font-size: 15px;
+    /* text-align: center; */
+    font-weight: bold;
+}
+.contentLeft{
+    float: right;
+    margin-top: -6%;
+
+}
+
+.bookBtn{
+    background-color: black;
+    border: none;
+    margin-top: 61%;
+    color: white;
+    cursor: pointer;
+}
+
+.searchBar{
+    width: 43%;
+    height: 95%;
+    margin: 3%;
+    background: border-box;
+    background-color: rgba(95, 158, 160, 0.568);
+    color: black;
+    padding: 11px 17px;
+    margin: 0px 0;
+    border: none;
+    border-radius: 23px;
+    font-size: 15px;
+    text-decoration: none;
+    outline: none;
+    margin-top: 50px;
+}
+   
+.search{
+    text-align: center;
+}
+.searchBtn{
+    display: inline-block;
+    padding: 4px 11px;
+    font-size: 19px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    outline: none;
+    color: #fff;
+    background-color: rgba(95, 158, 160, 0.897);
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0 7px #999;
+}

@@ -1,0 +1,19 @@
+ <div class="page">
+        <div class="InfoBox">
+            <div class="InfoText">
+                You are going to book <span>{{type}} {{number}}</span>{{'.'}}
+                Pick up time is <span>{{time}}</span>.
+                <form [formGroup]='bookRideForm '>
+                          <label for="id">Please enter employee id</label>
+                          <div>
+                          <input type="text" id="id" formControlName="id" name="id" placeholder="Employee Id..">
+                              </div>
+                          <div *ngIf="submitted && f.id.errors">
+                            <div class="errorMsg" *ngIf="f.id.errors.required">Employee Id is required</div>
+                          </div>
+</form>
+<button (click)="onClick()" class="book" type="button">Book</button>
+                        </div>
+        </div>
+     </div> 
+        <li style="list-style: none;"><a routerLink="/">Home</a></li>
